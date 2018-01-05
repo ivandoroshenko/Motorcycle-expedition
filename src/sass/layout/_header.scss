@@ -2,11 +2,11 @@
     width: 100%;
     padding: 14px 66px 14px 52px;
     display: flex;  
-    // position: fixed;
+    position: fixed;
+    z-index: 99;
     top: 0;
     align-items: center;
     justify-content: space-between;
-    background: #333;
 }
 
 nav {   
@@ -52,11 +52,16 @@ nav {
 }
 
 .social__link {
-margin: auto;
+width: 100%;
+display: flex;
 text-decoration: none;
 color: #ffffff;
 font-family: "Font Awesome";
 font-size: 20px;
 font-weight: 400;
 font-size: 1.25rem;
+}
+
+.fa {
+    margin: auto;
 }
