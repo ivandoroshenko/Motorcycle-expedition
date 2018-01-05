@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  color: #fff; }
 
 html, body {
   width: 100%;
@@ -23,8 +24,99 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
+.header {
+  width: 100%;
+  padding: 14px 66px 14px 52px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #333; }
+
+nav, .nav__list,
+.social__list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+
+.nav__list,
+.social__list {
+  list-style: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.nav__item {
+  margin-right: 30px; }
+  .nav__item .nav__link {
+    text-decoration: none;
+    text-shadow: 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 27.05px;
+    text-transform: uppercase;
+    letter-spacing: 1.13px; }
+
+.social__item {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.social__link {
+  margin: auto;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Font Awesome";
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 1.25rem; }
+
 .intro {
   max-width: 1700px;
-  background: url("../../img/header-background.jpg") left center no-repeat;
+  background: url("../../img/intro_bg.jpg") left top no-repeat;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  overflow: hidden; }
+
+.intro__title {
+  /* Style for "2,500 tour" */
+  max-width: 1125px;
+  height: 221px;
+  text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-family: "Billy Ohio";
+  font-size: 7.25rem;
+  font-weight: 400;
+  line-height: 95.78px;
+  /* Text style for ",, !" */
+  font-family: "Big Noodle Titling"; }

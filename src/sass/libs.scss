@@ -1,31 +1,11 @@
 @import "src/libs/magnific-popup/dist/magnific-popup"; // Импортируем библиотеку Magnific Popup
 @import "src/libs/normalize/normalize"; //импорт font-normalise
 @import "src/libs/fontawesome/font-awesome"; //шрифты
+@import "src/fonts/Bebas/stylesheet";
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Montserrat');
 @import url("https://use.typekit.net/nkx4sxp.css");
-@font-face {
-    font-family: "Bebas";
-    src: url('src/fonts/Bebas/BEBAS___.ttf') format("ttf");
-}
-@font-face {
-    font-family: "BebasNeue Bold";
-    src: url("../../src/fonts/bebas_neue/TTFs/BebasNeue Bold.ttf") format('ttf'),
-        url('../../src/fonts/bebas_neue/BebasNeue Bold.otf') format('otf');
-}
-
-@font-face {
-    font-family: "BebasNeue Book";
-    src: url("../../src/fonts/bebas_neue/TTFs/BebasNeue Book.ttf") format('ttf'),
-        url('../../src/fonts/bebas_neue/BebasNeue Book.otf') format('otf');
-}
-
-@font-face {
-    font-family: "HelveticaLTStd";
-    src: url('../../src/fonts/helvetica-lt-std/HelveticaLTStd-BoldCond.otf') format('otf');
-}
-
 @import "src/libs/slick-carousel/slick/slick.scss";
 @import "src/libs/slick-carousel/slick/slick-theme.scss";
 
-
+    
 

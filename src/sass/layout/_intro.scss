@@ -1,7 +1,20 @@
 .intro {
     max-width: 1700px;
-    background: url('../../img/header-background.jpg') left center no-repeat;
+    background: url('../../img/intro_bg.jpg') left top no-repeat;
     background-size: cover;
+    overflow: hidden;   
+}
 
-
+.intro__title {
+/* Style for "2,500 tour" */
+max-width: 1125px;
+height: 221px;
+text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
+color: #ffffff;
+font-family: "Billy Ohio";
+font-size: 7.25rem;
+font-weight: 400;
+line-height: 95.78px;
+/* Text style for ",, !" */
+font-family: "Big Noodle Titling";
 }

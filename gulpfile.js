@@ -78,7 +78,7 @@ gulp.task('img', function(){
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts'], function(){
-    gulp.watch('src/sass/**/*.+(scss|sass)', ['sass'])
+    gulp.watch('src/sass/**/*.+(scss|sass)', ['css-libs'], )
     gulp.watch('src/*.html', browserSync.reload)
     gulp.watch('src/js/**/*.js', browserSync.reload)
 });
