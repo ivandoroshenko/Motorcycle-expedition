@@ -1,14 +1,29 @@
 .destinations{
     background: #ededed;
     position: relative;
+    display: flex;
+    padding-top: 69px;
     
 }
+
+    //central picture with bike
+    .destinations__img{
+        position: absolute;
+        left: 54.6%;
+        top: 0;
+        transform: translateX(-50%);
+        z-index: 2;
+    }
+
+
 .destinations__column-left{
     display: flex;
     width: 54.6%;
     background: #cd0a2d;
-    padding: 60px 0 79px;
-    justify-content: center;   
+    padding: 45px 0 79px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;   
     
     p, h1, h2, ul, li {
     padding: 0;
@@ -31,23 +46,28 @@
             font-weight: 400;
             text-transform: uppercase;
         }
-    
+        ul.destinations__descr-list{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+        }
         li.destinations__descr-item{
             list-style: none;
             margin-top: 56px;
 
             &:first-child{
-                margin-top: 46px;
+                margin-top: 25px;
             }
         }   
         .destinations__descr-title{
+            margin-top: 50px;
             max-width: 225px;
             font-family: "helvetica_condensedbold", sans-serif;
             font-size: 26px;
             font-weight: 400;
         }
         p.destinations__descr-text{
-            margin-top: 17px;
+            margin-top: 16px;
             max-width: 407px;
             opacity: 0.44;
             font-family: 'Lato', sans-serif;
@@ -55,21 +75,83 @@
             font-weight: 500;
             letter-spacing: 0.5px;
         }
-        //central picture with bike
-    .destinations__img{
-        position: absolute;
-        left: 54.6%;
-        top: 22.75%;
-        transform: translate(-50%, -50%);
-    }
+    
 
+//column-right ================================
+    
 .destinations__column-right {
     width: 100% - 54.6%;
     background: #fff;
     display: flex;
+    justify-content: center;
+    padding: 81px 0 0 69px;
+    position: relative;
+    top: 63px;
+
     h2, p, ul, li {
         margin: 0;
         padding: 0;
         
     }
 }
+li.rider__card-item    {
+    list-style: none;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 46px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+}
+
+//reversive biker card
+li.rider__card-item--reverse{
+    flex-direction: row-reverse;
+    .rider__card-title {
+        max-width: 265px;   
+    }
+    .rider__card-descr{
+        margin-right: 39px;
+    }
+}
+
+.rider__card-title{
+padding: 0;
+margin: 0;
+display: flex;
+max-width: 238px;
+color: #5e5e5e;
+font-family: "bebas_neuebold", sans-serif;
+font-size: 3rem;
+font-weight: 400;
+align-items: center;
+justify-content: space-between;
+   
+    span {
+        /* Style for "Main Rider" */
+        max-width: 85px;
+        color: #979797;
+        font-family: "bebas_neuebook";
+        font-size: 1.563rem;
+        font-weight: 400;
+        
+    }
+    
+}
+
+.rider__card-text{
+max-width: 256px;
+height: 44px;
+opacity: 0.66;
+color: #040404;
+font-family: 'Lato', sans-serif;
+font-size: 1.125rem;
+font-weight: 500;
+line-height: 26.67px;
+letter-spacing: 0.5px;
+}
+
+
+
