@@ -4,9 +4,10 @@
     background-size: cover;
     overflow: hidden;  
     position: relative;
-    
- }
-    .overlay{
+    border: none;
+        //dark overlay
+    &:before{
+        content: '';
         position: absolute;
         left: 0;
         top: 0;
@@ -16,57 +17,69 @@
         opacity: 0.6;
         z-index: 1;
     }
-     .rectagle__right{
+        //red triangle. 
+    &:after{
+       content: '';
        width: 0; height: 0;
-        border-top: 940px solid  #cd0a2d;
-        border-left: 1075px solid transparent;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 3  ;
+       border-top: 940px solid  #cd0a2d;
+       border-left: 1075px solid transparent;
+       position: absolute;
+       right: 0;
+       top: 0;
+       z-index: 3 ;
+      
     }
-
-        .rectagle__bottom{
-        width: 0; height: 0;
-        border-bottom: 529px solid  #fff;
-        border-left: 100vw  solid transparent;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 2;
-    }
-
+        
+}
+    
     .intro__container {
         text-align: left;
         position: relative;
         padding: 200px 15px 553px 0 ;
         overflow: visible;
-    }  
-        .intro__title {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        z-index: 4;
-        left: -15px;
-        text-align: center;
-        font-family: "billy_ohioregular", "Comic Sans MS",  sans-serif;
-        /* Style for "2,500 tour" */
-        max-width: 1125px;
-        text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
-        color: #ffffff;
-        font-size: 7.25rem;
-        font-weight: 400;
-        line-height: 95.78px;
-        /* Text style for ",, !" */
-            //  font-family: "Big Noodle Titling";
-    }
 
-    .intro__picture{
+        
+            .intro__title {
+                margin: 0;
+                padding: 0;
+                position: relative;
+                z-index: 4;
+                left: -15px;
+                text-align: center;
+                font-family: "billy_ohioregular", "Comic Sans MS",  sans-serif;
+                /* Style for "2,500 tour" */
+                max-width: 1125px;
+                text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
+                color: #ffffff;
+                font-size: 7.25rem;
+                font-weight: 400;
+                line-height: 95.78px;
+                /* Text style for ",, !" */
+                span {
+                font-family: "bignoodletitlingoblique", sans-serif;
+                }
+                }
+
+            .intro__picture{
+                position: absolute;
+                z-index: 5;
+                top: 66%;
+                left: 47.7%;
+                transform: translate(-50%, -50%);
+                height: auto;
+                width: 78%;
+            }
+}
+
+//white triangle
+ .triangle-bottom{
+        content: '';
+        width: 0; height: 0;
+        border-bottom: 529px solid  #fff;
+        border-left: 100vw solid transparent;
+        overflow: hidden;
         position: absolute;
-        z-index: 5;
-        top: 66%;
-        left: 47.7%;
-        transform: translate(-50%, -50%);
-        height: auto;
-        width: 78%;
-    }
+        bottom: 0;
+        left: 0;
+        z-index: 2; 
+    }  

@@ -138,75 +138,78 @@ nav, .nav__list,
   -webkit-background-size: cover;
           background-size: cover;
   overflow: hidden;
-  position: relative; }
-
-.overlay {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  opacity: 0.6;
-  z-index: 1; }
-
-.rectagle__right {
-  width: 0;
-  height: 0;
-  border-top: 940px solid  #cd0a2d;
-  border-left: 1075px solid transparent;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 3; }
-
-.rectagle__bottom {
-  width: 0;
-  height: 0;
-  border-bottom: 529px solid  #fff;
-  border-left: 100vw  solid transparent;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 2; }
+  position: relative;
+  border: none; }
+  .intro:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.6;
+    z-index: 1; }
+  .intro:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 940px solid  #cd0a2d;
+    border-left: 1075px solid transparent;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 3; }
 
 .intro__container {
   text-align: left;
   position: relative;
   padding: 200px 15px 553px 0;
   overflow: visible; }
+  .intro__container .intro__title {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 4;
+    left: -15px;
+    text-align: center;
+    font-family: "billy_ohioregular", "Comic Sans MS",  sans-serif;
+    /* Style for "2,500 tour" */
+    max-width: 1125px;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 7.25rem;
+    font-weight: 400;
+    line-height: 95.78px;
+    /* Text style for ",, !" */ }
+    .intro__container .intro__title span {
+      font-family: "bignoodletitlingoblique", sans-serif; }
+  .intro__container .intro__picture {
+    position: absolute;
+    z-index: 5;
+    top: 66%;
+    left: 47.7%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    height: auto;
+    width: 78%; }
 
-.intro__title {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  z-index: 4;
-  left: -15px;
-  text-align: center;
-  font-family: "billy_ohioregular", "Comic Sans MS",  sans-serif;
-  /* Style for "2,500 tour" */
-  max-width: 1125px;
-  text-shadow: 4px 2px 0 rgba(0, 0, 0, 0.5);
-  color: #ffffff;
-  font-size: 7.25rem;
-  font-weight: 400;
-  line-height: 95.78px;
-  /* Text style for ",, !" */ }
-
-.intro__picture {
+.triangle-bottom {
+  content: '';
+  width: 0;
+  height: 0;
+  border-bottom: 529px solid  #fff;
+  border-left: 100vw solid transparent;
+  overflow: hidden;
   position: absolute;
-  z-index: 5;
-  top: 66%;
-  left: 47.7%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: auto;
-  width: 78%; }
+  bottom: 0;
+  left: 0;
+  z-index: 2; }
 
 .tours {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 150px;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fdfdfd+0,ededed+100&0+0,1+31,1+100 */
   /* FF3.6-15 */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(253, 253, 253, 0)), color-stop(31%, #f8f8f8), color-stop(100%, #ededed));
@@ -220,7 +223,8 @@ nav, .nav__list,
   background: linear-gradient(to bottom, rgba(253, 253, 253, 0) 0%, #f8f8f8 31%, #ededed 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fdfdfd', endColorstr='#ededed',GradientType=0 );
-  /* IE6-9 */ }
+  /* IE6-9 */
+  position: relative; }
 
 .tours__list {
   display: -webkit-box;
@@ -259,6 +263,42 @@ nav, .nav__list,
           align-items: flex-start; }
   .tours__item .tours-card-img {
     width: 100%; }
+  .tours__item .card__img-wrapper {
+    position: relative; }
+  .tours__item .card__img-wrapper:after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-bottom: 175px solid #cd0a2d;
+    border-right: 186px solid transparent; }
+  .tours__item .card-count {
+    position: absolute;
+    bottom: 12px;
+    left: 7px;
+    z-index: 2; }
+  .tours__item .card-count__title {
+    margin: 0;
+    padding: 0;
+    max-width: 96px;
+    font-family: "bebasregular";
+    font-size: 3.5rem;
+    font-weight: 400;
+    /* Text style for "$" */ }
+    .tours__item .card-count__title span {
+      font-size: 2.25rem; }
+  .tours__item .card-count__sub-title {
+    /* Style for "per Person" */
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-family: "bebas_neuebook";
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 4.35px; }
   .tours__item-title {
     margin: 0;
     margin-top: 45px;
@@ -286,3 +326,78 @@ nav, .nav__list,
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.5px; }
+
+.destinations {
+  background: #ededed;
+  position: relative; }
+
+.destinations__column-left {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 54.6%;
+  background: #cd0a2d;
+  padding: 60px 0 79px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .destinations__column-left p, .destinations__column-left h1, .destinations__column-left h2, .destinations__column-left ul, .destinations__column-left li {
+    padding: 0;
+    margin: 0; }
+
+.destinations__container {
+  padding-left: 33%;
+  margin: 0; }
+  @media screen and (max-width: 1600px) {
+    .destinations__container {
+      padding-left: 10%; } }
+
+.destinations__title {
+  max-width: 425px;
+  color: #fcfbfb;
+  font-family: "bebas_neuebold";
+  font-size: 4.25rem;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+li.destinations__descr-item {
+  list-style: none;
+  margin-top: 56px; }
+  li.destinations__descr-item:first-child {
+    margin-top: 46px; }
+
+.destinations__descr-title {
+  max-width: 225px;
+  font-family: "helvetica_condensedbold", sans-serif;
+  font-size: 26px;
+  font-weight: 400; }
+
+p.destinations__descr-text {
+  margin-top: 17px;
+  max-width: 407px;
+  opacity: 0.44;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: 0.5px; }
+
+.destinations__img {
+  position: absolute;
+  left: 54.6%;
+  top: 22.75%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.destinations__column-right {
+  width: 45.4%;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .destinations__column-right h2, .destinations__column-right p, .destinations__column-right ul, .destinations__column-right li {
+    margin: 0;
+    padding: 0; }

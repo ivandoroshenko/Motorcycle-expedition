@@ -1,0 +1,75 @@
+.destinations{
+    background: #ededed;
+    position: relative;
+    
+}
+.destinations__column-left{
+    display: flex;
+    width: 54.6%;
+    background: #cd0a2d;
+    padding: 60px 0 79px;
+    justify-content: center;   
+    
+    p, h1, h2, ul, li {
+    padding: 0;
+    margin: 0;
+    }
+}
+    .destinations__container{
+        padding-left: 33%;
+        margin: 0;
+
+        @media screen and (max-width: 1600px){
+            padding-left: 10%;
+        }
+    }
+        .destinations__title {
+            max-width: 425px;
+            color: #fcfbfb;
+            font-family: "bebas_neuebold";
+            font-size: 4.25rem;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    
+        li.destinations__descr-item{
+            list-style: none;
+            margin-top: 56px;
+
+            &:first-child{
+                margin-top: 46px;
+            }
+        }   
+        .destinations__descr-title{
+            max-width: 225px;
+            font-family: "helvetica_condensedbold", sans-serif;
+            font-size: 26px;
+            font-weight: 400;
+        }
+        p.destinations__descr-text{
+            margin-top: 17px;
+            max-width: 407px;
+            opacity: 0.44;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.125rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        //central picture with bike
+    .destinations__img{
+        position: absolute;
+        left: 54.6%;
+        top: 22.75%;
+        transform: translate(-50%, -50%);
+    }
+
+.destinations__column-right {
+    width: 100% - 54.6%;
+    background: #fff;
+    display: flex;
+    h2, p, ul, li {
+        margin: 0;
+        padding: 0;
+        
+    }
+}

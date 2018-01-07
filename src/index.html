@@ -51,17 +51,11 @@
 	<main class="maincontent"> <!-- maincontent -->
 
 		<section class="intro" id="home"> <!-- intro ssection -->
-			<!-- dark overlay and two color triangles -->
-			<div class="overlay"></div>
-			<div class="rectagle__right"></div>
-			<div class="rectagle__bottom"></div>
-			<!-- centring container -->
-
-		<div class="container intro__container">
-			<h1 class="intro__title">2,500 tours in over 100 destinations and 36 years of experience!</h1>
-			<img src="img/header-bike.png" alt="bike" class="intro__picture">
-		</div> <!-- centering container -->
-		
+		<div class="triangle-bottom"></div>
+			<div class="container intro__container">
+				<h1 class="intro__title">2<span>,</span>500 tours in over 100 destinations and 36 years of experience<span>!</span></h1>
+				<img src="img/header-bike.png" alt="bike" class="intro__picture">
+			</div> <!-- centering container -->
 		</section> <!-- intro -->
 		
 		<section class="tours" id="rentals">
@@ -69,11 +63,37 @@
 			<div class="container tours__container">
 
 				<ul class="tours__list">
-					<li class="tours__item">
-						<img src="img/tour1.jpg" alt="Tours" class="tours-card-img" />
-						
 					
+					<li class="tours__item">
+						<div class="card__img-wrapper">
+							<img src="img/tour1.jpg" alt="Tours" class="tours-card-img" />
+							<div class="card-count">
+								<p class="card-count__title"><span>$</span>100</p>
+								<p class="card-count__sub-title">per Person</p>
+							</div>
+						</div>
+						<!-- card desctiption -->
 						<h1 class="tours__item-title">Motorcycle Expeditions</h1>
+						<p class="tours__item-text">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						
+						<button class="btn tours__item-btn">
+							<a href="#" class="tours__item-link">book now</a>
+						</button>
+					
+					</li>
+
+					<li class="tours__item">
+						<div class="card__img-wrapper">
+							<img src="img/tour2.jpg" alt="Tours" class="tours-card-img" />
+							<div class="card-count">
+								<p class="card-count__title"><span>$</span>100</p>
+								<p class="card-count__sub-title">per Person</p>
+							</div>	
+						</div>
+						<!-- card desctiption -->
+						<h1 class="tours__item-title">Mountains Motorcycle Tours</h1>
 						<p class="tours__item-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
@@ -82,21 +102,15 @@
 						</button>
 					
 					</li>
-
 					<li class="tours__item">
-						<img src="img/tour2.jpg" alt="Tours" class="tours-card-img">
-							<h1 class="tours__item-title">Mountains Motorcycle Tours</h1>
-							<p class="tours__item-text">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
-							<button class="btn tours__item-btn">
-								<a href="#" class="tours__item-link">book now</a>
-							</button>
-					
-					</li>
-					<li class="tours__item">
-						<img src="img/tour3.jpg" alt="Tours" class="tours-card-img" />
-						
+						<div class="card__img-wrapper">
+							<img src="img/tour3.jpg" alt="Tours" class="tours-card-img" />
+							<div class="card-count">
+								<p class="card-count__title"><span>$</span>100</p>
+								<p class="card-count__sub-title">per Person</p>
+							</div>
+						</div>
+						<!-- card desctiption -->
 						<h1 class="tours__item-title">Motorcycle Adventure Tours</h1>
 						<p class="tours__item-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -112,6 +126,82 @@
 		</section>
 		<!-- tours-section -->
 
+		<section class="destinations">
+			<img src="img/center-motorcycle-image.png" alt="Destinations bike" class="destinations__img">
+				<div class="destinations__column-left">
+					<div class="container destinations__container">
+						<h1 class="destinations__title">We are World Wide</h1>
+						<!-- desctinations__descr-list -->
+						<ul class="destinations__descr-list">
+							
+							<li class="destinations__descr-item">
+								<h2 class="destinations__descr-title">10 reasons why USA.</h2>
+								<p class="destinations__descr-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								</p>
+							</li>
+							
+							<li class="destinations__descr-item">
+								<h2 class="destinations__descr-title">10 reasons why USA.</h2>
+								<p class="destinations__descr-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								</p>
+							</li>
+							
+							<li class="destinations__descr-item">
+								<h2 class="destinations__descr-title">10 reasons why USA.</h2>
+								<p class="destinations__descr-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+								</p>
+							</li>
+						</ul>
+						<!-- desctinations__descr-list -->
+					</div>
+				</div> <!-- column-left -->
+				
+				
+				<div class="destinations__column-right">
+		
+					<div class="rider__card">
+						<img src="img/alex_dou.png" alt="Alex Doe" class="rider__card-logo">
+						<div class="rider__card-descr">
+							<h2 class="rider__card-title">Alex Doe
+								<span>Main Rider</span>
+							</h2>
+							<p class="rider__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+		
+					<div class="rider__card">
+						<img src="img/steve_dou.png" alt="Steve Doe" class="rider__card-logo">
+						<div class="rider__card-descr">
+							<h2 class="rider__card-title">Steve Doe
+								<span>Main Rider</span>
+							</h2>
+							<p class="rider__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+		
+					<div class="rider__card">
+						<img src="img/bill_doe.png" alt="Bill Doe" class="rider__card-logo">
+						<div class="rider__card-descr">
+							<h2 class="rider__card-title">Bill Doe
+								<span>Main Rider</span>
+							</h2>
+							<p class="rider__card-text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</p>
+						</div>
+					</div>
+		
+				</div>
+			</div>
+		</section>
+		<!-- destinations-section -->
 	</main> <!-- mainconent -->
 
 	<footer class="footer">
