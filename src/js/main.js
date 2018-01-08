@@ -1,11 +1,17 @@
 $(function() {
 
-    // $(function ($) {
-    //     $(function () {
-    //         $('.testimonials--slider').slick({
-    //             dots: true
-    //         });
-    //     })
-    // })(jQuery);
+    
+    $('.testimonial__slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        speed: 700,
+        fade: true,
+        cssEase: 'linear',
+        adaptiveHeight: false
+    });
+
 
 });
