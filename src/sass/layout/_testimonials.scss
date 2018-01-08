@@ -3,28 +3,35 @@
     padding-top: 165px;
 }
 
-.testimonial__heading{
+.testimonial__heading,
+.heading {
     margin: 0;
     padding: 0;
     text-align: center;
 }
 
-.testimonial__heading-title {
+.testimonial__heading-title, 
+.heading__title {
 margin: 0 auto 0;
 padding: 0;
-max-width: 425px;
-color: #cd0a2d;
+max-width: 425px;   
 font-family: "bebas_neuebold";
 font-size: 4.25rem;
 font-weight: 400;
 text-transform: uppercase;
 text-align: center;
-    span {
-        color: #000000;
-    }
 }
+.testimonial__heading-title{
+color: #cd0a2d;
+    span {
+            color: #000000;
+        }
+}
+    
 
-.testimonial__heading-text{
+
+.testimonial--heading__text, 
+.heading__text{
     margin: 18px auto 0;
     padding: 0;
     max-width: 825px;

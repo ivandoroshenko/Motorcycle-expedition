@@ -1,0 +1,95 @@
+.motorcycles{
+    background-color: #1a1919;
+    position: relative;
+    z-index: 0;
+    padding-top: 95px;
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../img/bg_motors.png');
+        background-size: cover;
+        opacity: 0.12;
+        z-index: -1;    
+    }
+}
+
+.heading__title--motorcycles{
+    max-width: 830px;
+    color: #fff;
+    font-size: 68px;
+    font-weight: 400;
+    span {
+        color: #cd0a2d;
+    }  
+}
+.heading__text--motorcycles{
+    margin-top: 10px;
+}
+.motorcycles-features{
+    display: flex;
+    flex-direction: row;
+    padding-top:  60px;
+
+}
+.column {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column; 
+    padding-top: 96px;
+
+}
+.motorcycles__column-left {
+    background: #cd0a2d;
+    padding: 117px 0 0 219px;
+}
+
+.motorcycles__count{
+    font-family: 'bebas_neuebold', sans-serif;
+    font-weight: 400;
+    margin: 0 35px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    p {
+        padding: 0;
+        margin: 0;
+    }
+}
+.motorcycles__count--small{
+    /* Style for "1000km" */
+   font-size: 3.438rem;;
+   max-width: 138px;
+    span {
+        font-size: 1.813rem;
+    }
+
+    .motorcycles__count--big{
+        /* Style for "3000km" */
+        max-width: 200px;
+        font-size: 5.438rem;
+        font-weight: 400;
+        /* Text style for "km" */
+        span {
+            font-size: 46px;
+        }
+    }
+    .motorcycles__count-title{
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+.motorcycles__text{
+    font-family: 'Lato', sans-serif;
+    max-width: 490px;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 26.67px;
+    letter-spacing: 0.5px;
+}
