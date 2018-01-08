@@ -1,8 +1,22 @@
 .motorcycles{
-    background-color: #1a1919;
     position: relative;
-    z-index: 0;
     padding-top: 95px;
+    width: 100%;
+   
+
+    //map-overlay
+    &:before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('../img/bg_map.png') center  top no-repeat;
+        background-size: contain;
+        opacity: 0.08;
+        z-index: 2;    
+    }
     &:after {
         content: '';
         position: absolute;
@@ -10,13 +24,21 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('../img/bg_motors.png');
-        background-size: cover;
-        opacity: 0.12;
-        z-index: -1;    
+        background-color: #1a1919;
+        z-index: -3;
+
     }
 }
+.motorcycles__heading{
+        padding-bottom: 60px;
+    }
+.motorcycles__heading,
+.motorcycles__column {
+    position: relative;
+    z-index: 2;
 
+    
+}
 .heading__title--motorcycles{
     max-width: 830px;
     color: #fff;
@@ -28,68 +50,173 @@
 }
 .heading__text--motorcycles{
     margin-top: 10px;
+    color: #fff;
 }
-.motorcycles-features{
+.motorcycles__features{
     display: flex;
-    flex-direction: row;
-    padding-top:  60px;
-
-}
-.column {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-    // flex-direction: column; 
-    padding-top: 96px;
-
-}
-.motorcycles__column-left {
-    background: #cd0a2d;
-    padding: 117px 0 0 219px;
-}
-
-.motorcycles__count{
-    font-family: 'bebas_neuebold', sans-serif;
-    font-weight: 400;
-    margin: 0 35px;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+    flex-flow: row nowrap;
     align-items: center;
-    p {
-        padding: 0;
-        margin: 0;
-    }
-}
-.motorcycles__count--small{
-    /* Style for "1000km" */
-   font-size: 3.438rem;;
-   max-width: 138px;
-    span {
-        font-size: 1.813rem;
+    justify-content: center;
+    position: relative;
+    
+
+    // central-bike
+    .motorcycles__img{
+        top: -24px;
+        left: 50%;
+        z-index: 3;
     }
 
-    .motorcycles__count--big{
-        /* Style for "3000km" */
-        max-width: 200px;
-        font-size: 5.438rem;
-        font-weight: 400;
-        /* Text style for "km" */
-        span {
-            font-size: 46px;
+    &:before{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background: #cd0a2d;
+            z-index: -2 ;
         }
+}
+    .motorcycles__column{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;  
+        width: 50%;
+        padding-bottom: 145px;
+
+        .motorcycles__count--wrapper{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+        //all counts and paragraph with text block
+        p {
+            margin: 0;
+            padding: 0;
+            
+        }
+        .motorcycles__count {   
+            font-family: 'bebas_neuebold', sans-serif;
+            font-weight: 400;
+            margin: 0 35px;
+            padding: 0;
+            text-align: center; 
+            vertical-align: bottom;
+        }
+        p.motorcycles__text{
+            font-family: 'Lato', sans-serif;
+            max-width: 490px;
+            text-align: center;
+            font-size: 1.125rem;
+            font-weight: 500;
+            line-height: 26.67px;
+            letter-spacing: 0.5px;
+            margin: 90px 0 0 0;
+            padding: 0;
+            flex-grow: 1;
+        }
+        
     }
-    .motorcycles__count-title{
-        padding: 0;
-        margin: 0;
-    }
+
+    .motorcycles__column-left {
+        padding: 117px 0 145px 219px;
+
+        @media screen and (max-width: 1600px){
+            padding-left: 10%;
+        }
+        // small counts ===========================
+        .motorcycles__count-title--small{
+            font-size: 2.438rem;;
+            max-width: 138px;
+            line-height: 39px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        } 
+        span, .motorcycles__count-sub-title--small {
+            font-size: 1.813rem;
+            text-transform: uppercase;
+            max-width: 65px;        
+            line-height: 1.25rem;
+            font-weight: 400;
+        }
+        // big counts =========================
+        .motorcycles__count-title--big {
+            max-width: 185px;
+            line-height: 63px;
+            font-size: 5.438rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+            span {
+                font-size: 2.875rem;
+            }
+        }
+        p.motorcycles__count-sub-title--big{
+            max-width: 95px;
+            line-height: 35px;
+            font-size: 2.813rem;
+            font-weight: 400;
+            margin: 7px auto 0;
+        }
+    }    
+          
+
+        
+      .motorcycles__column-right{
+          padding-left: 160px;
+
+          // small counts ===========================
+        .motorcycles__count-title--small{
+            max-width: 115px;
+            line-height: 39px;
+            font-size: 3.438rem;
+            font-weight: 400;
+            letter-spacing: 1px;
+
+            span {
+                font-size: 1.813rem;
+            }
+        } 
+        
+        .motorcycles__count-sub-title--small {
+            max-width: 65px;
+            line-height: 20px;
+            font-size: 1.813rem;
+            font-weight: 400;
+            margin: 0 auto;
+        }
+        // big counts =========================
+        .motorcycles__count-title--big {
+            line-height: 91px;
+            font-size: 7.75rem;
+            font-weight: 400;
+        }
+        p.motorcycles__count-sub-title--big{
+            max-width: 155px;
+            height: 32px;
+            font-size: 2.813rem;
+            font-weight: 400;
+            margin: 0;
+        }
+      }
     
-}
-.motorcycles__text{
-    font-family: 'Lato', sans-serif;
-    max-width: 490px;
-    font-size: 1.125rem;
-    font-weight: 500;
-    line-height: 26.67px;
-    letter-spacing: 0.5px;
-}
+
+
+
+
+
+
+
+    
+        
+    
+
+
+
+    //column-right =======================
+   .motorcycles__column-right {
+        background: transparent;
+        width: 50%;
+        padding-top: 96px;
+   } 

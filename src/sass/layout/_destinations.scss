@@ -7,6 +7,7 @@
 }
 
     //central picture with bike
+    .center__img,
     .destinations__img{
         position: absolute;
         left: 54.6%;
@@ -16,7 +17,8 @@
     }
 
 
-.destinations__column-left{
+.destinations__column-left,
+.column-left {
     display: flex;
     width: 54.6%;
     background: #cd0a2d;
@@ -79,7 +81,8 @@
 
 //column-right ================================
     
-.destinations__column-right {
+.destinations__column-right, 
+.column-right {
     width: 100% - 54.6%;
     background: #fff;
     display: flex;
