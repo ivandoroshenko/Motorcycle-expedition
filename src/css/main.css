@@ -330,7 +330,8 @@ nav, .nav__list,
     height: 0;
     border-bottom: 175px solid #cd0a2d;
     border-right: 186px solid transparent; }
-  .tours__item .card-count {
+  .tours__item .card-count,
+  .tours__item .card-count--blog {
     position: absolute;
     bottom: 12px;
     left: 7px;
@@ -889,16 +890,46 @@ li.rider__card-item--reverse {
 .blog {
   background: #ededed;
   padding-top: 131px; }
-
-.blog-heading__title {
-  color: #1a1919; }
-
-.blog-heading__text {
-  margin: 15px auto 0;
-  color: #1a1919; }
-
-.blog-galler__container {
-  padding: 43px 0 84px; }
+  .blog-heading__title {
+    color: #1a1919; }
+  .blog .heading__text {
+    margin: 15px auto 0;
+    color: #1a1919;
+    font-weight: 600; }
+  .blog-gallery__container {
+    padding: 43px 15px 84px; }
+    .blog-gallery__container p {
+      margin: 0;
+      padding: 0; }
+  .blog .card-count__title--blog {
+    width: 190px;
+    line-height: 25px;
+    color: #fff;
+    font-family: "bebas_neuebold";
+    font-size: 2.25rem;
+    font-weight: 400; }
+  .blog p.card-count__sub-title--blog {
+    margin-top: 9px;
+    max-width: 135px;
+    height: 17px;
+    color: #fff;
+    font-family: "bebas_neuebook";
+    font-size: 1.375rem;
+    font-weight: 400;
+    letter-spacing: 4.35px; }
+  .blog .card-count {
+    bottom: 28px;
+    left: 0; }
+  .blog .tours__item-title {
+    max-width: 310px; }
+  .blog .tours__item-text--blog {
+    max-width: 335px;
+    color: #676767;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-top: 12px; }
 
 .footer {
   background-color: #cd0a2d; }
