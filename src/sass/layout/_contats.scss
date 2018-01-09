@@ -4,7 +4,7 @@
     z-index: 0;
 }
 .contacts__heading {
-    background: url('../../img/paralax_bg.jpg') center -340px no-repeat;
+    background: url('../img/paralax_bg.jpg') center -340px no-repeat;
     background-size: cover;
     padding: 100px 0 185px 130px;
     position: relative;
@@ -49,8 +49,8 @@
     .fa-map-marker{
         font-size: 198px;
         position: absolute;
-        left: 50%;
-        bottom: -49px;
+        left: 49%;
+        bottom: -70px;
         color: #cd0a2d;
         z-index: 3;
         max-width: 118px;
@@ -74,9 +74,14 @@ ul, li {
     color: #181818;
     display: flex;
     flex-flow: row wrap;
+    width: 33%;
+    align-items: center;
+
     
     p, a, address {
        color: #181818; 
+       margin: 0;
+       padding: 0;
     } 
     a {
         display: block;
@@ -87,9 +92,14 @@ ul, li {
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.4px;
-        margin-left: 84px;
+        
     }
     a:last-child {
         max-width: 195px;
     }
+}
+.contacts-address__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-left: 28px;
 }
