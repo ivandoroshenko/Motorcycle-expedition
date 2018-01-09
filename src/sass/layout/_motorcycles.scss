@@ -105,6 +105,8 @@
             text-align: center; 
             vertical-align: bottom;
         }
+
+     
         p.motorcycles__text{
             font-family: 'Lato', sans-serif;
             max-width: 490px;
@@ -126,6 +128,11 @@
         @media screen and (max-width: 1600px){
             padding-left: 10%;
         }
+
+         .motorcycles__count--wrapper{
+             justify-content: flex-end;
+             margin-right: 20px;
+          }
         // small counts ===========================
         .motorcycles__count-title--small{
             font-size: 2.438rem;;
@@ -140,6 +147,7 @@
             max-width: 65px;        
             line-height: 1.25rem;
             font-weight: 400;
+            margin: 0 auto;
         }
         // big counts =========================
         .motorcycles__count-title--big {
@@ -166,6 +174,11 @@
       .motorcycles__column-right{
           padding-left: 160px;
 
+
+          .motorcycles__count--wrapper{
+             margin-left: 16px;
+          }
+           
           // small counts ===========================
         .motorcycles__count-title--small{
             max-width: 115px;
