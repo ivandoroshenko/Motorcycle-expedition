@@ -13,5 +13,7 @@ $(function() {
         adaptiveHeight: false
     });
 
-
+    $('.parallax-window').parallax({ 
+        imageSrc: '../img/paralax_bg.jpg' 
+    });
 }); 

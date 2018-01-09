@@ -931,5 +931,56 @@ li.rider__card-item--reverse {
     letter-spacing: 0.5px;
     margin-top: 12px; }
 
+.contacts {
+  background: #ededed;
+  position: relative;
+  z-index: 0; }
+
+.contacts__heading {
+  background: url("../../img/paralax_bg.jpg") center -340px no-repeat;
+  -webkit-background-size: cover;
+          background-size: cover;
+  padding: 100px 0 185px 130px;
+  position: relative;
+  z-index: 1; }
+  .contacts__heading:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1a1919;
+    opacity: 0.8;
+    z-index: 2; }
+  .contacts__heading .contacts__title,
+  .contacts__heading .contacts__text {
+    position: relative;
+    z-index: 3; }
+  .contacts__heading .contacts__title {
+    max-width: 435px;
+    color: #fff; }
+  .contacts__heading .contacts__text {
+    width: 814px;
+    height: 44px;
+    color: #fefefe;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26.67px;
+    /* Text style for "L, orem ip" */
+    letter-spacing: 0.5px; }
+  .contacts__heading .contacts__heading-container {
+    position: relative;
+    z-index: 1; }
+  .contacts__heading .fa-map-marker {
+    font-size: 198px;
+    position: absolute;
+    left: 50%;
+    bottom: -49px;
+    color: #cd0a2d;
+    z-index: 3;
+    max-width: 118px; }
+
 .footer {
   background-color: #cd0a2d; }
