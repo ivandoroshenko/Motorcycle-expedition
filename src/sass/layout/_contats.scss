@@ -106,6 +106,10 @@ ul, li {
         line-height: 24px;
         letter-spacing: 0.4px;
         text-align: left;
+
+        &:hover {
+            text-shadow: 1px 1px 2px rgba(38, 38, 38, 0.5);
+        }
     }
 }
    
@@ -141,6 +145,11 @@ ul, li {
     border: 3px solid #f0d839;
     padding: 0;
 
+    &:hover {
+        
+        box-shadow: -1px 0em 2rem  #cd0a2d;
+    }
+
     .contacts-social__link{
         line-height: 28px;
         font-family: "Font Awesome";
@@ -149,6 +158,7 @@ ul, li {
         letter-spacing: 1.8px;
         justify-content: center;
         text-align: center;
+
     }
     .fa {
         color: #353535;

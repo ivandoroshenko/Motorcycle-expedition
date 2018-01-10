@@ -38,14 +38,49 @@ body {
 .tours__item-btn {
   margin-top: 30px;
   border: none;
-  justify-self: flex-end; }
-  .tours__item-btn .tours__item-link {
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: "bebas_neuebold", sans-serif;
-    font-size: 1.313rem;
-    font-weight: 400;
-    text-decoration: none; }
+  justify-self: flex-end;
+  -webkit-transition: -webkit-box-shadow 0.2s ease-out;
+  transition: -webkit-box-shadow 0.2s ease-out;
+  -o-transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out;
+  transition: box-shadow 0.2s ease-out, -webkit-box-shadow 0.2s ease-out; }
+  .tours__item-btn:hover {
+    -webkit-box-shadow: 0px 1px 1rem 0 #212124;
+            box-shadow: 0px 1px 1rem 0 #212124; }
+
+.tours__item-link {
+  text-decoration: none; }
+
+.tours__item-btn {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "bebas_neuebold", sans-serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+  cursor: pointer; }
+
+.btn-up {
+  height: 50px;
+  width: 50px;
+  border: 1px solid #e84c3d;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  cursor: pointer;
+  display: none; }
+
+.btn-up--shown {
+  display: block; }
+
+.btn-up:hover {
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  fill: #fff;
+  background: #e84c3d; }
 
 .social__item {
   margin-right: 25px;
@@ -60,6 +95,9 @@ body {
           border-radius: 50%; }
   .social__item:last-child {
     margin-right: 0; }
+  .social__item:hover {
+    -webkit-box-shadow: -1px 0em 2rem #f0d839;
+            box-shadow: -1px 0em 2rem #f0d839; }
 
 .social__link {
   width: 100%;
@@ -151,6 +189,14 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  .header_fixed {
+    position: fixed;
+    top: 0;
+    background: #1a1919;
+    opacity: 0.9;
+    -webkit-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out; }
 
 nav, .nav__list,
 .social__list {
@@ -187,6 +233,9 @@ nav, .nav__list,
     line-height: 27.05px;
     text-transform: uppercase;
     letter-spacing: 1.13px; }
+    .nav__item .nav__link:hover {
+      text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.5);
+      color: red; }
 
 .intro {
   width: 100%;
@@ -831,7 +880,8 @@ li.rider__card-item--reverse {
     line-height: 39px;
     font-weight: 400;
     letter-spacing: 1px; }
-  .motorcycles__column-left span, .motorcycles__column-left .motorcycles__count-sub-title--small {
+  .motorcycles__column-left .count__descr--small,
+  .motorcycles__column-left .motorcycles__count-sub-title--small {
     font-size: 1.813rem;
     text-transform: uppercase;
     max-width: 65px;
@@ -844,8 +894,8 @@ li.rider__card-item--reverse {
     font-size: 5.438rem;
     font-weight: 400;
     letter-spacing: 1px; }
-    .motorcycles__column-left .motorcycles__count-title--big span {
-      font-size: 2.875rem; }
+  .motorcycles__column-left .count__descr--big {
+    font-size: 2.875rem; }
   .motorcycles__column-left p.motorcycles__count-sub-title--big {
     max-width: 95px;
     line-height: 35px;
@@ -859,19 +909,20 @@ li.rider__card-item--reverse {
     margin-left: 16px; }
   .motorcycles__column-right .motorcycles__count-title--small {
     max-width: 115px;
-    line-height: 39px;
+    line-height: 53px;
     font-size: 3.438rem;
     font-weight: 400;
     letter-spacing: 1px; }
-    .motorcycles__column-right .motorcycles__count-title--small span {
-      font-size: 1.813rem; }
+  .motorcycles__column-right .count__descr--small {
+    font-size: 1.813rem; }
   .motorcycles__column-right .motorcycles__count-sub-title--small {
     max-width: 65px;
     line-height: 20px;
     font-size: 1.813rem;
     font-weight: 400;
     margin: 0 auto; }
-  .motorcycles__column-right .motorcycles__count-title--big {
+  .motorcycles__column-right .motorcycles__count-title--big,
+  .motorcycles__column-right .count__descr--big {
     line-height: 91px;
     font-size: 7.75rem;
     font-weight: 400; }
@@ -1045,6 +1096,8 @@ ul, li {
     line-height: 24px;
     letter-spacing: 0.4px;
     text-align: left; }
+    .contacts-main__item .contacts-address__link:hover {
+      text-shadow: 1px 1px 2px rgba(38, 38, 38, 0.5); }
 
 .contacts-address__wrapper {
   display: -webkit-box;
@@ -1090,6 +1143,9 @@ ul, li {
   height: 67px;
   border: 3px solid #f0d839;
   padding: 0; }
+  .contacts-social__item:hover {
+    -webkit-box-shadow: -1px 0em 2rem  #cd0a2d;
+            box-shadow: -1px 0em 2rem  #cd0a2d; }
   .contacts-social__item .contacts-social__link {
     line-height: 28px;
     font-family: "Font Awesome";

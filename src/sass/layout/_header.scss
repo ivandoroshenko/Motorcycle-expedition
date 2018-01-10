@@ -7,8 +7,17 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
-}
+    
+    
 
+    &_fixed {
+        position: fixed;
+        top: 0;
+        background: #1a1919;
+        opacity: 0.9;
+        transition: all 0.35s ease-out;
+    }
+}
 nav {   
        display: flex;
        flex-direction: row;
@@ -35,6 +44,11 @@ nav {
         line-height: 27.05px;
         text-transform: uppercase;
         letter-spacing: 1.13px;
+
+        &:hover {
+                text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.5);
+                color: red;
+        }
     }
 }
 

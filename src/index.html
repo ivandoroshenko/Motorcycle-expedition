@@ -30,14 +30,14 @@
 			<img src="img/logo.png" alt="logo" class="logo">
 		</div>
 
-		<nav class="nav"> <!-- navigation and soials -->
+		<nav class="nav"> <!-- navigation and soials -->	
 			<ul class="nav__list"><!-- header navigation -->
-				<li class="nav__item"><a class="nav__link" href="#">Home</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Destinations</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Motorcycles</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">Rentals</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">blog</a></li>
-				<li class="nav__item"><a class="nav__link" href="#">contact</a></li>
+				<li class="nav__item"><a  href="#home" class="nav__link">Home</a></li>
+				<li class="nav__item"><a class="nav__link" href="#destinations">Destinations</a></li>
+				<li class="nav__item"><a class="nav__link" href="#motorcycles">Motorcycles</a></li>
+				<li class="nav__item"><a class="nav__link" href="#rentals">Rentals</a></li>
+				<li class="nav__item"><a class="nav__link" href="#blog">blog</a></li>
+				<li class="nav__item"><a class="nav__link" href="#contacts">contact</a></li>
 			</ul>
 
 			<!-- social links -->
@@ -80,9 +80,7 @@
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
 						
-						<button class="btn tours__item-btn">
-							<a href="#" class="tours__item-link">book now</a>
-						</button>
+						<a href="#" class="tours__item-link"><button class="btn tours__item-btn">book now</button></a>
 					
 					</li>
 
@@ -99,10 +97,7 @@
 						<p class="tours__item-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
-						<button class="btn tours__item-btn">
-							<a href="#" class="tours__item-link">book now</a>
-						</button>
-					
+							<a href="#" class="tours__item-link"><button class="btn tours__item-btn">book now</button></a>
 					</li>
 					<li class="tours__item">
 						<div class="card__img-wrapper">
@@ -117,9 +112,9 @@
 						<p class="tours__item-text">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 						</p>
-						<button class="btn tours__item-btn">
-							<a href="#" class="tours__item-link">book now</a>
-						</button>
+						
+							<a href="#" class="tours__item-link"><button class="btn tours__item-btn">book now</button></a>
+					
 					
 					</li>
 				</ul>
@@ -128,7 +123,7 @@
 		</section>
 		<!-- tours-section -->
 
-		<section class="destinations">	
+		<section class="destinations" id="destinations">	
 			<img src="img/center-motorcycle-image.png" alt="Destinations bike" class="center__img destinations__img">
 				<div class="column-left destinations__column-left">
 					<div class="container destinations__container">
@@ -309,7 +304,7 @@
 			</div>
 			<!--/motorcycles__heading -->
 		
-			<div class="motorcycles__features">
+			<div class="motorcycles__features" id="counter">
 
 				<img src="img/bike_bottom.png" alt="Bike_bottom" class="center__img motorcycles__img"> 
 				
@@ -317,11 +312,17 @@
 					<div class="motorcycles__column-left--container">
 						<div class="motorcycles__count--wrapper">
 							<div class="motorcycles__count motorcycles__count--small">
-								<p class="motorcycles__count-title--small">1000<span>km</span></p>
+								<p class="count-wrapper--small">
+									<span class="motorcycles__count-title--small" id="counter-km" data-count="1000">0</span>
+									<span class="count__descr--small">km</span>
+								</p>
 								<p class="motorcycles__count-sub-title--small">2 Days</p>
 							</div>
 							<div class="motorcycles__count">
-								<p class="motorcycles__count-title--big">3000<span>km</span></p>
+								<p class="count-wrapper--big">
+									<span class="motorcycles__count-title--big" id="counter-countries" data-count="3000">0</span>
+									<span class="count__descr--big">km</span>
+								</p>
 								<p class="motorcycles__count-sub-title--big">7 days</p>
 							</div>
 						</div>
@@ -337,13 +338,19 @@
 		
 					<div class="motorcycles__count--wrapper">
 						<div class="motorcycles__count">
-							<p class="motorcycles__count-title--big">50+</p>
+							<p class="count-wrapper--big">
+								<span class="motorcycles__count-title--big" id="counter-countries" data-count="50">0</span>
+								<span class="count__descr--big">+</span>
+							</p>
 							<p class="motorcycles__count-sub-title--big">Countries</p>
 						</div>
 					
 		
 					<div class="motorcycles__count motorcycles__count--small">
-						<p class="motorcycles__count-title--small">1000<span>km</span></p>
+						<p class="count-wrapper--small">
+							<span class="motorcycles__count-title--small" id="counter-km" data-count="1000">0</span>
+							<span class="count__descr--small">km</span>
+						</p>
 						<p class="motorcycles__count-sub-title--small">2 Days</p>
 					</div>
 				</div>
@@ -454,8 +461,8 @@
 						<div class="contacts-address__wrapper">
 							<p class="contacts-main__title">Email</p>
 							<address class="contacts-adress">
-								<a href="#" class="contacts-address__link">free@psdfreebies.com</a>
-								<a href="#" class="contacts-address__link">free@psdfreebies.com</a>
+								<a href="mailto: free@psdfreebies.com" class="contacts-address__link">free@psdfreebies.com</a>
+								<a href="mailto: free@psdfreebies.com" class="contacts-address__link">free@psdfreebies.com</a>
 							</address>
 						</div>
 						
@@ -466,8 +473,8 @@
 						<div class="contacts-address__wrapper">
 							<p class="contacts-main__title">Phone</p>
 							<address class="contacts-adress">
-								<a href="#" class="contacts-address__link">+123 456 7890</a>
-								<a href="#" class="contacts-address__link">+123 456 7890</a>
+								<a href="tel: +1234567890" class="contacts-address__link">+123 456 7890</a>
+								<a href="tel: +1234567890" class="contacts-address__link">+123 456 7890</a>
 							</address>
 						</div>
 					</li>
@@ -516,6 +523,13 @@
 		<h2 class="footer__title">Designed By PSDFreebies.com</h2> 
 		<p class="footer-text">Copyright 2020, All Right Reserved</p>
 	</footer>
+	<div class="btn-up">
+		<svg xmlns="http://www.w3.org/2000/svg" class="btn-up" width="48" height="48" fill="#e84c3d" viewBox="0 0 48 48">
+			<path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z" />
+		</svg>
+	</div>
+	<!-- /go up arrow button -->
+
 	<script src="js/libs.min.js"></script>
 	<script src="js/main.js"></script>
 </body>

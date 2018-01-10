@@ -141,7 +141,8 @@
             font-weight: 400;
             letter-spacing: 1px;
         } 
-        span, .motorcycles__count-sub-title--small {
+        .count__descr--small, 
+        .motorcycles__count-sub-title--small {
             font-size: 1.813rem;
             text-transform: uppercase;
             max-width: 65px;        
@@ -156,9 +157,9 @@
             font-size: 5.438rem;
             font-weight: 400;
             letter-spacing: 1px;
-            span {
-                font-size: 2.875rem;
-            }
+        }
+        .count__descr--big {
+            font-size: 2.875rem;
         }
         p.motorcycles__count-sub-title--big{
             max-width: 95px;
@@ -182,16 +183,14 @@
           // small counts ===========================
         .motorcycles__count-title--small{
             max-width: 115px;
-            line-height: 39px;
+            line-height: 53px;
             font-size: 3.438rem;
             font-weight: 400;
             letter-spacing: 1px;
-
-            span {
+        } 
+        .count__descr--small {
                 font-size: 1.813rem;
             }
-        } 
-        
         .motorcycles__count-sub-title--small {
             max-width: 65px;
             line-height: 20px;
@@ -200,11 +199,13 @@
             margin: 0 auto;
         }
         // big counts =========================
-        .motorcycles__count-title--big {
+        .motorcycles__count-title--big,
+        .count__descr--big {
             line-height: 91px;
             font-size: 7.75rem;
             font-weight: 400;
         }
+       
         p.motorcycles__count-sub-title--big{
             max-width: 155px;
             height: 32px;
