@@ -16,12 +16,13 @@ $(function() {
         arrows: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 1500,
+        autoplaySpeed: 2000,
         speed: 700,
-        fade: true,
+        fade: false,
         cssEase: 'linear',
         adaptiveHeight: false
     });
+   
 
     // $('.parallax-window').parallax({ 
     //     imageSrc: '../img/paralax_bg.jpg' 
