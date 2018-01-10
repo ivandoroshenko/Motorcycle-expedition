@@ -38,32 +38,3 @@ nav {
     }
 }
 
-.social__item {
-    margin-right: 25px;
-   display: flex;
-    width: 46px;
-    height: 46px;
-    border: 3px solid #ffffff;
-    border-radius: 50%;
-    &:last-child {
-    margin-right: 0;
-    
-    } 
-    
-}
-
-.social__link {
-width: 100%;
-display: flex;
-text-decoration: none;
-color: #ffffff;
-font-family: "Font Awesome";
-font-size: 20px;
-font-weight: 400;
-font-size: 1.25rem;
-align-items: center;
-}
-
-.fa {
-    margin: auto;
-}

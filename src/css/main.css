@@ -47,6 +47,40 @@ body {
     font-weight: 400;
     text-decoration: none; }
 
+.social__item {
+  margin-right: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  border: 3px solid #fff;
+  -webkit-border-radius: 50%;
+          border-radius: 50%; }
+  .social__item:last-child {
+    margin-right: 0; }
+
+.social__link {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Font Awesome";
+  font-size: 20px;
+  font-weight: 400;
+  font-size: 1.25rem;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.fa {
+  margin: auto; }
+
 .testimonial__slider {
   padding: 38px 0 83px 0;
   background: #fff;
@@ -153,40 +187,6 @@ nav, .nav__list,
     line-height: 27.05px;
     text-transform: uppercase;
     letter-spacing: 1.13px; }
-
-.social__item {
-  margin-right: 25px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 46px;
-  height: 46px;
-  border: 3px solid #ffffff;
-  -webkit-border-radius: 50%;
-          border-radius: 50%; }
-  .social__item:last-child {
-    margin-right: 0; }
-
-.social__link {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  color: #ffffff;
-  font-family: "Font Awesome";
-  font-size: 20px;
-  font-weight: 400;
-  font-size: 1.25rem;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.fa {
-  margin: auto; }
 
 .intro {
   width: 100%;
@@ -976,32 +976,37 @@ li.rider__card-item--reverse {
   .contacts__heading .fa-map-marker {
     font-size: 198px;
     position: absolute;
-    left: 49%;
+    left: 53%;
     bottom: -70px;
     color: #cd0a2d;
     z-index: 3;
-    max-width: 118px; }
+    max-width: 118px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 .contacts-main {
-  padding: 127px 79px 77px 97px; }
+  padding: 127px 0 77px 97px;
+  text-align: center; }
 
 ul, li {
   list-style: none; }
 
 .contacts-main__list {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap; }
 
 .contacts-main__item {
   color: #181818;
@@ -1011,29 +1016,35 @@ ul, li {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 33%;
+  -webkit-flex-flow: row nowrap;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-align: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
-  .contacts-main__item p, .contacts-main__item a, .contacts-main__item address {
+  .contacts-main__item .contacts-main__title {
+    margin: 0 0 0 11px;
+    padding-bottom: 10px;
+    width: 56px;
+    line-height: 19px;
     color: #181818;
+    font-family: "helvetica_condensedbold", sans-serif;
+    font-size: 1.625rem;
+    font-weight: 400; }
+  .contacts-main__item .contacts-address__link {
     margin: 0;
-    padding: 0; }
-  .contacts-main__item a {
+    padding: 0;
     display: block;
-    max-width: 154px;
+    text-decoration: none;
+    max-width: 180px;
     color: #262626;
-    font-family: 'Lato';
-    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0.4px; }
-  .contacts-main__item a:last-child {
-    max-width: 195px; }
+    letter-spacing: 0.4px;
+    text-align: left; }
 
 .contacts-address__wrapper {
   display: -webkit-box;
@@ -1045,7 +1056,67 @@ ul, li {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 28px; }
+  margin-left: 28px;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.contacts-address {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block; }
+
+.contacts-main__icon {
+  margin-bottom: auto; }
+  .contacts-main__icon--email {
+    margin-top: 4px; }
+  .contacts-main__icon--phone {
+    margin-top: 6px; }
+  .contacts-main__icon--address {
+    margin-top: 1px; }
+
+.contacts-social__list {
+  margin: 63px 0  0 228px; }
+
+.contacts-social__item {
+  width: 68px;
+  height: 67px;
+  border: 3px solid #f0d839;
+  padding: 0; }
+  .contacts-social__item .contacts-social__link {
+    line-height: 28px;
+    font-family: "Font Awesome";
+    font-size: 1.875rem;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center; }
+  .contacts-social__item .fa {
+    color: #353535; }
 
 .footer {
-  background-color: #cd0a2d; }
+  background-color: #cd0a2d;
+  text-align: center;
+  margin: 0;
+  padding: 64px 0; }
+  .footer .footer__title,
+  .footer .footer-text {
+    margin: 0;
+    padding: 0;
+    width: 280spx;
+    line-height: 53px;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.42px; }
