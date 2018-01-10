@@ -50,8 +50,19 @@ color: #cd0a2d;
     flex-direction: row;
     position: relative;
     overflow: visible;
-    align-items: center;
+    justify-content: flex-start;
+    
+   @media screen and (max-width: 980px){
+                 justify-content: center;
+
+               }
+               @media screen and (max-width: 580px){
+                 justify-content: center;
+                    margin-top: 0;
+                    width: 100%;
+               }
 }
+
 
 .testimonial__title{
     padding: 0;
@@ -98,4 +109,11 @@ color: #cd0a2d;
     margin-left: 126px;
     z-index: 2;
     
+      @media screen and (max-width: 1120px){
+                  margin: 0;
+                   width: 35%;
+               }
+               @media screen and (max-width: 980px){
+                 display: none;
+               }
 }

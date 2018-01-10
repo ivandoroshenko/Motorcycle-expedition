@@ -175,7 +175,9 @@
       .motorcycles__column-right{
           padding-left: 160px;
 
-
+        @media screen and (max-width: 1120px){
+                 padding-left: 160px;
+               }
           .motorcycles__count--wrapper{
              margin-left: 16px;
           }

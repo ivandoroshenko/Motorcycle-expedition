@@ -7,6 +7,7 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
+     
     
     
 
@@ -29,11 +30,51 @@ nav {
     @extend nav;
     list-style: none;
     align-items: center;
+
+    @media screen and (max-width: 1420px){
+               padding-left: 0;
+               justify-content: center;
+            }
+            
 }
+.nav__list{
+ @media screen and (max-width: 968px){
+                 margin: 0;
+               flex-direction: column;
+               align-items: flex-end;
+               position: fixed;
+               right: 0;
+               top: 0;
+               width: 50%;
+               background: #1a1919;
+               opacity: 0.9;
+               border-bottom: 1px solid #fff;
+               
+
+            }
+        }
+        .social__list {
+             @media screen and (max-width: 1180px){
+           display: none;
+               
+
+            }
+        }
 
 .nav__item {
     margin-right: 30px;
 
+
+  @media screen and (max-width: 1310px){
+               margin-right: 15px;
+              
+            }
+              @media screen and (max-width: 968px){
+              
+               border-bottom: 1px solid #fff;
+               
+
+            }
     .nav__link {
         text-decoration: none;
         text-shadow: 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.2);

@@ -10,6 +10,17 @@
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: 1420px){
+                    
+                    background-position-y: center;
+
+                    }
+                     @media screen and (max-width: 1120px){
+                    
+                    padding-left: 0;
+                    
+                    }
+
     &:after {
         content: '';
         position: absolute;
@@ -29,17 +40,28 @@
     .contacts__title{
         max-width: 435px;
         color: #fff;
+        text-align: center;
+        @media screen and (max-width: 768px){
+                    
+                   font-size: 2.5rem;
+                    
+                    }
     }
     .contacts__text{
-        width: 814px;
-        height: 44px;
+        max-width: 814px;
+         line-height: 44px;
         color: #fefefe;
         font-family: Lato;
         font-size: 18px;
         font-weight: 500;
         line-height: 26.67px;
-        /* Text style for "L, orem ip" */
         letter-spacing: 0.5px;
+        text-align: center;
+        @media screen and (max-width: 768px){
+                    
+                   max-width: 400px;
+                    
+                    }
 }
 
     .contacts__heading-container {
@@ -62,7 +84,22 @@
     
     padding: 127px 0 77px 97px;
     text-align: center;
-
+    display: flex;
+    flex-direction: column;
+     @media screen and (max-width: 800px){
+                
+                padding-top: 20px;
+                padding-left: 0;
+                   
+        }
+     @media screen and (max-width: 768px){
+                margin-left: 0;
+                margin-top: 20px;
+                flex-direction: row;
+                align-items: space-between;
+                justify-content: center;
+                   
+        }
 }
 ul, li {
     list-style: none;
@@ -73,12 +110,26 @@ ul, li {
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
+      @media screen and (max-width: 800px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                   
+        }
+  
 }
 .contacts-main__item{
     color: #181818;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
+
+     @media screen and (max-width: 800px){
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                   
+        }
     
 
     .contacts-main__title{
@@ -90,6 +141,12 @@ ul, li {
         font-family: "helvetica_condensedbold", sans-serif;
         font-size: 1.625rem;
         font-weight: 400;
+          @media screen and (max-width: 800px){
+                margin-top: 10px;
+                margin-left: 0;
+                
+                   
+        }
     }
     
     
@@ -119,6 +176,12 @@ ul, li {
     margin-left: 28px;
     align-items: flex-start;
     justify-content: center;
+     @media screen and (max-width: 800px){
+                
+                align-items: center;
+                justify-content: center;
+                   
+        }
 }
  .contacts-address{
      flex-grow: 1;
@@ -135,15 +198,39 @@ ul, li {
      &--address {
         margin-top: 1px;
     }
+     @media screen and (max-width: 768px){
+                   justify-self: center;
+                   align-self: center;
+                    
+            }
 }
 .contacts-social__list{
-    margin: 63px 0  0 228px;    
+    text-align: center;
+    margin: 63px 0  0 228px;
+    
+        @media screen and (max-width: 1120px){
+                    margin-left: 0;
+                    
+            }
+             @media screen and (max-width: 768px){
+                   justify-content: space-between;
+                   flex-direction: column;
+                   align-items: center;
+                   margin-top: 15px;
+                    margin-left: 50px;
+                    
+            }
 }
 .contacts-social__item {
     width: 68px;
     height: 67px;
     border: 3px solid #f0d839;
     padding: 0;
+
+     @media screen and (max-width: 768px){
+                  margin-top: 15px;
+                    
+            }
 
     &:hover {
         

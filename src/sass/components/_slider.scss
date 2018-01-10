@@ -5,7 +5,14 @@
     max-width: 568px;
     display: flex;
     justify-content: center;
+     
+                @media screen and (max-width: 580px){
+                 justify-content: center;
+                    margin-top: 0;
+                   max-width: 320px;
+               }
 }
+
 
     .testimonial__slide {
         display: flex;
