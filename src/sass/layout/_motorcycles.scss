@@ -51,6 +51,9 @@
 .heading__text--motorcycles{
     margin-top: 10px;
     color: #fff;
+    @media screen and (max-width: 768px){
+        padding: 0 15px;   
+    }
 }
 .motorcycles__features{
     display: flex;
@@ -58,13 +61,18 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    
+      @media screen and (max-width: 768px){
+        flex-flow: column wrap; 
+    }
 
     // central-bike
     .motorcycles__img{
         top: -24px;
         left: 50%;
         z-index: 3;
+           @media screen and (max-width: 1420px){
+                max-width: 260px;
+            }
     }
 
     &:before{
@@ -75,7 +83,13 @@
             height: 100%;
             width: 50%;
             background: #cd0a2d;
-            z-index: -2 ;
+            z-index: -2;
+
+            @media screen and (max-width: 768px){
+                top: 0;
+                width: 90%;
+                max-height: 400px;
+            }
         }
 }
     .motorcycles__column{
@@ -85,6 +99,11 @@
         justify-content: flex-end;  
         width: 50%;
         padding-bottom: 145px;
+
+          @media screen and (max-width: 768px){
+            padding-top: 50px;
+            width: 100%;
+        }
 
         .motorcycles__count--wrapper{
             display: flex;
@@ -104,6 +123,9 @@
             padding: 0;
             text-align: center; 
             vertical-align: bottom;
+              @media screen and (max-width: 768px){
+                margin: 0 15px;
+            }
         }
 
      
@@ -118,6 +140,12 @@
             margin: 90px 0 0 0;
             padding: 0;
             flex-grow: 1;
+             @media screen and (max-width: 1420px){
+                    max-width: 450px;
+                }
+             @media screen and (max-width: 768px){
+                    padding: 0 15px;
+                }
         }
         
     }
@@ -129,9 +157,18 @@
             padding-left: 10%;
         }
 
+        @media screen and (max-width: 768px){
+            padding-left: 15px;
+            padding-top: 50px;
+            padding-bottom: 30px;
+        }
+
          .motorcycles__count--wrapper{
              justify-content: flex-end;
              margin-right: 20px;
+            @media screen and (max-width: 768px){
+                margin-right: 20px;
+            }
           }
         // small counts ===========================
         .motorcycles__count-title--small{
@@ -140,6 +177,9 @@
             line-height: 39px;
             font-weight: 400;
             letter-spacing: 1px;
+             @media screen and (max-width: 768px){
+                font-size: 1.438rem;;
+            }
         } 
         .count__descr--small, 
         .motorcycles__count-sub-title--small {
@@ -149,6 +189,9 @@
             line-height: 1.25rem;
             font-weight: 400;
             margin: 0 auto;
+              @media screen and (max-width: 768px){
+                font-size: 1.438rem;;
+            }
         }
         // big counts =========================
         .motorcycles__count-title--big {
@@ -157,6 +200,9 @@
             font-size: 5.438rem;
             font-weight: 400;
             letter-spacing: 1px;
+             @media screen and (max-width: 768px){
+                font-size: 4.438rem;
+            }
         }
         .count__descr--big {
             font-size: 2.875rem;
@@ -168,6 +214,16 @@
             font-weight: 400;
             margin: 7px auto 0;
         }
+
+        p.motorcycles__text {
+               @media screen and (max-width: 1420px){
+                    max-width: 450px;
+                    text-align: left;
+                }
+               @media screen and (max-width: 768px){
+                    margin-top: 30px;
+                }
+        }
     }    
           
 
@@ -177,7 +233,14 @@
 
         @media screen and (max-width: 1120px){
                  padding-left: 160px;
-               }
+        }
+
+        @media screen and (max-width: 768px){
+            padding-bottom: 30px;
+            width: 100%;
+        }
+
+      
           .motorcycles__count--wrapper{
              margin-left: 16px;
           }
@@ -206,6 +269,9 @@
             line-height: 91px;
             font-size: 7.75rem;
             font-weight: 400;
+             @media screen and (max-width: 768px){
+                font-size: 6.75rem;
+            }
         }
        
         p.motorcycles__count-sub-title--big{
@@ -215,24 +281,26 @@
             font-weight: 400;
             margin: 0;
         }
+
+         p.motorcycles__text {
+               @media screen and (max-width: 1420px){
+                    text-align: right;
+                }
+               @media screen and (max-width: 768px){
+                   margin-top: 60px;
+                }
+        }
       }
     
-
-
-
-
-
-
-
-    
-        
-    
-
-
 
     //column-right =======================
    .motorcycles__column-right {
         background: transparent;
         width: 50%;
         padding-top: 96px;
+         @media screen and (max-width: 768px){
+            padding-left: 0;
+            padding-top: 50px;
+            width: 100%;
+        }
    } 

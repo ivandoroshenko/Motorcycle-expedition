@@ -32,12 +32,15 @@
        @media screen and (max-width: 1420px){
                border-left: 75vw solid transparent;
             }
-
-            @media screen and (max-width:768px){
-               border-top: 700px solid  #cd0a2d;
+            @media screen and (max-width: 992px){
+               border-top-width: 116vh;
             }
-      @media screen and (max-width:730px){
-               border-top: 500px solid  #cd0a2d;
+            @media screen and (max-width: 630px){
+               border-top-width: 60vh;
+            }
+            @media screen and (max-width: 420px){
+               border-top-width: 50vh;
+               border-left-width: 65vw;
             }
     }
         
@@ -48,7 +51,12 @@
         position: relative;
         padding: 200px 15px 553px 0 ;
         overflow: visible;
-
+            @media screen and (max-width:992px){
+               padding: 122px 15px 420px 0;
+            }
+            @media screen and (max-width:630px){
+               padding: 122px 15px 60vw 0;
+            }
         
             .intro__title {
                 margin: 0;
@@ -71,10 +79,13 @@
                     left: 0;
                    
                 }
-                @media screen and (max-width: 768px){
-                   line-height: 85.78px;
-                   font-size: 6.25rem;
+                @media screen and (max-width: 992px){
+                   line-height: 81.78px;
+                   font-size: 6rem;
+                   max-width: 90%;
+                   margin: 0 auto;
                 }
+               
                 @media screen and (max-width: 650px){
                     line-height: 75.78px;
                    font-size: 5.25rem;
@@ -106,9 +117,11 @@
                 width: 78%;
                  @media screen and (max-width: 1200px){
                        top: 70%;
-                       
-                  
                 }
+                 @media screen and (max-width: 992px){
+                        max-width: 700px;
+                }
+                
                 @media screen and (max-width: 768px){
                    left: 50%;
                    width: 100%;
@@ -129,14 +142,9 @@
         z-index: 2; 
 
           @media screen and (max-width: 1000px){
-                  border-bottom: 700px solid  #fff; 
-               }
-          @media screen and (max-width: 650px){
-                  border: none;
-                  width: 100vw;
-                  height: 280px;
-                  border: none;
-                  background: #fff;
-                                 
-                }      
+                  border-bottom: 65vw solid  #fff; 
+            }
+          @media screen and (max-width: 420px){
+                  border-bottom-width: 90vw; 
+            }
     }  

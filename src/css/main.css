@@ -3,6 +3,9 @@
           box-sizing: border-box;
   color: #fff; }
 
+html {
+  background-color: #fff; }
+
 html, body {
   width: 100%;
   min-height: 100vh; }
@@ -94,6 +97,16 @@ body {
   border: 3px solid #fff;
   -webkit-border-radius: 50%;
           border-radius: 50%; }
+  @media screen and (max-width: 1180px) {
+    .social__item {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px; } }
+  @media screen and (max-width: 420px) {
+    .social__item {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px; } }
   .social__item:last-child {
     margin-right: 0; }
   .social__item:hover {
@@ -198,14 +211,40 @@ body {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media screen and (max-width: 1220px) {
+    .header {
+      padding: 14px 25px; } }
+  @media screen and (max-width: 420px) {
+    .header {
+      padding: 5px 15px; } }
+  .header .logo {
+    -webkit-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    @media screen and (max-width: 1220px) {
+      .header .logo {
+        max-width: 120px; } }
+    @media screen and (max-width: 420px) {
+      .header .logo {
+        max-width: 100px; } }
   .header_fixed {
     position: fixed;
+    -webkit-transition: all 0.35s ease-out;
+    -o-transition: all 0.35s ease-out;
+    transition: all 0.35s ease-out;
     top: 0;
     background: #1a1919;
     opacity: 0.9;
-    -webkit-transition: all 0.35s ease-out;
-    -o-transition: all 0.35s ease-out;
-    transition: all 0.35s ease-out; }
+    padding-top: 5px;
+    padding-bottom: 5px; }
+    .header_fixed .logo {
+      -webkit-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out;
+      max-width: 120px; }
+      @media screen and (max-width: 1220px) {
+        .header_fixed .logo {
+          max-width: 100px; } }
 
 nav, .nav__list,
 .social__list {
@@ -237,6 +276,17 @@ nav, .nav__list,
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media screen and (max-width: 1180px) {
+    .nav__list .fa,
+    .social__list .fa {
+      font-size: 14px; } }
+  @media screen and (max-width: 420px) {
+    .nav__list,
+    .social__list {
+      margin: 0; }
+      .nav__list .fa,
+      .social__list .fa {
+        font-size: 16px; } }
 
 @media screen and (max-width: 968px) {
   .nav__list {
@@ -258,10 +308,6 @@ nav, .nav__list,
     opacity: 0.9;
     border-bottom: 1px solid #fff; } }
 
-@media screen and (max-width: 1180px) {
-  .social__list {
-    display: none; } }
-
 .nav__item {
   margin-right: 30px; }
   @media screen and (max-width: 1310px) {
@@ -280,6 +326,9 @@ nav, .nav__list,
     line-height: 27.05px;
     text-transform: uppercase;
     letter-spacing: 1.13px; }
+    @media screen and (max-width: 1220px) {
+      .nav__item .nav__link {
+        font-size: 0.9rem; } }
     .nav__item .nav__link:hover {
       text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.5);
       color: red; }
@@ -315,18 +364,28 @@ nav, .nav__list,
     @media screen and (max-width: 1420px) {
       .intro:after {
         border-left: 75vw solid transparent; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       .intro:after {
-        border-top: 700px solid  #cd0a2d; } }
-    @media screen and (max-width: 730px) {
+        border-top-width: 116vh; } }
+    @media screen and (max-width: 630px) {
       .intro:after {
-        border-top: 500px solid  #cd0a2d; } }
+        border-top-width: 60vh; } }
+    @media screen and (max-width: 420px) {
+      .intro:after {
+        border-top-width: 50vh;
+        border-left-width: 65vw; } }
 
 .intro__container {
   text-align: left;
   position: relative;
   padding: 200px 15px 553px 0;
   overflow: visible; }
+  @media screen and (max-width: 992px) {
+    .intro__container {
+      padding: 122px 15px 420px 0; } }
+  @media screen and (max-width: 630px) {
+    .intro__container {
+      padding: 122px 15px 60vw 0; } }
   .intro__container .intro__title {
     margin: 0;
     padding: 0;
@@ -346,10 +405,12 @@ nav, .nav__list,
     @media screen and (max-width: 1420px) {
       .intro__container .intro__title {
         left: 0; } }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       .intro__container .intro__title {
-        line-height: 85.78px;
-        font-size: 6.25rem; } }
+        line-height: 81.78px;
+        font-size: 6rem;
+        max-width: 90%;
+        margin: 0 auto; } }
     @media screen and (max-width: 650px) {
       .intro__container .intro__title {
         line-height: 75.78px;
@@ -381,6 +442,9 @@ nav, .nav__list,
     @media screen and (max-width: 1200px) {
       .intro__container .intro__picture {
         top: 70%; } }
+    @media screen and (max-width: 992px) {
+      .intro__container .intro__picture {
+        max-width: 700px; } }
     @media screen and (max-width: 768px) {
       .intro__container .intro__picture {
         left: 50%;
@@ -399,14 +463,10 @@ nav, .nav__list,
   z-index: 2; }
   @media screen and (max-width: 1000px) {
     .triangle-bottom {
-      border-bottom: 700px solid  #fff; } }
-  @media screen and (max-width: 650px) {
+      border-bottom: 65vw solid  #fff; } }
+  @media screen and (max-width: 420px) {
     .triangle-bottom {
-      border: none;
-      width: 100vw;
-      height: 280px;
-      border: none;
-      background: #fff; } }
+      border-bottom-width: 90vw; } }
 
 .tours {
   width: 100%;
@@ -426,6 +486,9 @@ nav, .nav__list,
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00fdfdfd', endColorstr='#ededed',GradientType=0 );
   /* IE6-9 */
   position: relative; }
+  @media screen and (max-width: 420px) {
+    .tours {
+      padding-bottom: 30px; } }
 
 .tours__list {
   display: -webkit-box;
@@ -608,7 +671,9 @@ nav, .nav__list,
       -webkit-box-align: center;
       -webkit-align-items: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center;
+      padding-top: 0;
+      margin-bottom: 115px; } }
 
 .center__img,
 .destinations__img {
@@ -889,6 +954,9 @@ li.rider__card-item--reverse {
 .testimonial {
   background-color: #ededed;
   padding-top: 165px; }
+  @media screen and (max-width: 768px) {
+    .testimonial {
+      padding-top: 30px; } }
 
 .testimonial__heading,
 .heading {
@@ -949,6 +1017,9 @@ li.rider__card-item--reverse {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; } }
+  @media screen and (max-width: 768px) {
+    .testimonial__main-container {
+      padding-top: 40px; } }
   @media screen and (max-width: 580px) {
     .testimonial__main-container {
       -webkit-box-pack: center;
@@ -1054,6 +1125,9 @@ li.rider__card-item--reverse {
 .heading__text--motorcycles {
   margin-top: 10px;
   color: #fff; }
+  @media screen and (max-width: 768px) {
+    .heading__text--motorcycles {
+      padding: 0 15px; } }
 
 .motorcycles__features {
   display: -webkit-box;
@@ -1074,10 +1148,20 @@ li.rider__card-item--reverse {
       -ms-flex-pack: center;
           justify-content: center;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .motorcycles__features {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: column wrap;
+          -ms-flex-flow: column wrap;
+              flex-flow: column wrap; } }
   .motorcycles__features .motorcycles__img {
     top: -24px;
     left: 50%;
     z-index: 3; }
+    @media screen and (max-width: 1420px) {
+      .motorcycles__features .motorcycles__img {
+        max-width: 260px; } }
   .motorcycles__features:before {
     content: '';
     position: absolute;
@@ -1087,6 +1171,11 @@ li.rider__card-item--reverse {
     width: 50%;
     background: #cd0a2d;
     z-index: -2; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__features:before {
+        top: 0;
+        width: 90%;
+        max-height: 400px; } }
 
 .motorcycles__column {
   display: -webkit-box;
@@ -1108,6 +1197,10 @@ li.rider__card-item--reverse {
           justify-content: flex-end;
   width: 50%;
   padding-bottom: 145px; }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column {
+      padding-top: 50px;
+      width: 100%; } }
   .motorcycles__column .motorcycles__count--wrapper {
     display: -webkit-box;
     display: -webkit-flex;
@@ -1132,6 +1225,9 @@ li.rider__card-item--reverse {
     padding: 0;
     text-align: center;
     vertical-align: bottom; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column .motorcycles__count {
+        margin: 0 15px; } }
   .motorcycles__column p.motorcycles__text {
     font-family: 'Lato', sans-serif;
     max-width: 490px;
@@ -1146,24 +1242,41 @@ li.rider__card-item--reverse {
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
+    @media screen and (max-width: 1420px) {
+      .motorcycles__column p.motorcycles__text {
+        max-width: 450px; } }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column p.motorcycles__text {
+        padding: 0 15px; } }
 
 .motorcycles__column-left {
   padding: 117px 0 145px 219px; }
   @media screen and (max-width: 1600px) {
     .motorcycles__column-left {
       padding-left: 10%; } }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column-left {
+      padding-left: 15px;
+      padding-top: 50px;
+      padding-bottom: 30px; } }
   .motorcycles__column-left .motorcycles__count--wrapper {
     -webkit-box-pack: end;
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 20px; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column-left .motorcycles__count--wrapper {
+        margin-right: 20px; } }
   .motorcycles__column-left .motorcycles__count-title--small {
     font-size: 2.438rem;
     max-width: 138px;
     line-height: 39px;
     font-weight: 400;
     letter-spacing: 1px; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column-left .motorcycles__count-title--small {
+        font-size: 1.438rem; } }
   .motorcycles__column-left .count__descr--small,
   .motorcycles__column-left .motorcycles__count-sub-title--small {
     font-size: 1.813rem;
@@ -1172,12 +1285,19 @@ li.rider__card-item--reverse {
     line-height: 1.25rem;
     font-weight: 400;
     margin: 0 auto; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column-left .count__descr--small,
+      .motorcycles__column-left .motorcycles__count-sub-title--small {
+        font-size: 1.438rem; } }
   .motorcycles__column-left .motorcycles__count-title--big {
     max-width: 185px;
     line-height: 63px;
     font-size: 5.438rem;
     font-weight: 400;
     letter-spacing: 1px; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column-left .motorcycles__count-title--big {
+        font-size: 4.438rem; } }
   .motorcycles__column-left .count__descr--big {
     font-size: 2.875rem; }
   .motorcycles__column-left p.motorcycles__count-sub-title--big {
@@ -1186,12 +1306,23 @@ li.rider__card-item--reverse {
     font-size: 2.813rem;
     font-weight: 400;
     margin: 7px auto 0; }
+  @media screen and (max-width: 1420px) {
+    .motorcycles__column-left p.motorcycles__text {
+      max-width: 450px;
+      text-align: left; } }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column-left p.motorcycles__text {
+      margin-top: 30px; } }
 
 .motorcycles__column-right {
   padding-left: 160px; }
   @media screen and (max-width: 1120px) {
     .motorcycles__column-right {
       padding-left: 160px; } }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column-right {
+      padding-bottom: 30px;
+      width: 100%; } }
   .motorcycles__column-right .motorcycles__count--wrapper {
     margin-left: 16px; }
   .motorcycles__column-right .motorcycles__count-title--small {
@@ -1213,17 +1344,32 @@ li.rider__card-item--reverse {
     line-height: 91px;
     font-size: 7.75rem;
     font-weight: 400; }
+    @media screen and (max-width: 768px) {
+      .motorcycles__column-right .motorcycles__count-title--big,
+      .motorcycles__column-right .count__descr--big {
+        font-size: 6.75rem; } }
   .motorcycles__column-right p.motorcycles__count-sub-title--big {
     max-width: 155px;
     height: 32px;
     font-size: 2.813rem;
     font-weight: 400;
     margin: 0; }
+  @media screen and (max-width: 1420px) {
+    .motorcycles__column-right p.motorcycles__text {
+      text-align: right; } }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column-right p.motorcycles__text {
+      margin-top: 60px; } }
 
 .motorcycles__column-right {
   background: transparent;
   width: 50%;
   padding-top: 96px; }
+  @media screen and (max-width: 768px) {
+    .motorcycles__column-right {
+      padding-left: 0;
+      padding-top: 50px;
+      width: 100%; } }
 
 .blog {
   background: #ededed;

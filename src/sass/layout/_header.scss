@@ -7,16 +7,37 @@
     top: 0;
     align-items: center;
     justify-content: space-between;
-     
-    
-    
-
+     @media screen and (max-width: 1220px){
+            padding: 14px 25px;
+    }
+     @media screen and (max-width: 420px){
+            padding: 5px 15px;
+    }
+    .logo {
+        transition: all 0.2s ease-out;
+        @media screen and (max-width: 1220px){
+            max-width: 120px;
+        }
+        @media screen and (max-width: 420px){
+            max-width: 100px;
+        }
+    }
     &_fixed {
         position: fixed;
+        transition: all 0.35s ease-out;
         top: 0;
         background: #1a1919;
         opacity: 0.9;
-        transition: all 0.35s ease-out;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .logo {
+            transition: all 0.2s ease-out;
+            max-width: 120px;
+                @media screen and (max-width: 1220px){
+                    max-width: 100px;
+                }
+        }
     }
 }
 nav {   
@@ -36,6 +57,17 @@ nav {
                justify-content: center;
             }
             
+     @media screen and (max-width: 1180px){
+                .fa {
+                    font-size: 14px;
+                }
+            }
+     @media screen and (max-width: 420px){
+         margin: 0;
+                .fa {
+                    font-size: 16px;
+                }
+            }
 }
 .nav__list{
  @media screen and (max-width: 968px){
@@ -49,13 +81,6 @@ nav {
                background: #1a1919;
                opacity: 0.9;
                border-bottom: 1px solid #fff;
-               
-
-            }
-        }
-        .social__list {
-             @media screen and (max-width: 1180px){
-           display: none;
                
 
             }
@@ -85,6 +110,10 @@ nav {
         line-height: 27.05px;
         text-transform: uppercase;
         letter-spacing: 1.13px;
+
+         @media screen and (max-width: 1220px){
+            font-size: 0.9rem;
+                }
 
         &:hover {
                 text-shadow: 1px 4px 1px rgba(0, 0, 0, 0.5);

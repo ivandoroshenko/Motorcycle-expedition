@@ -1,6 +1,9 @@
 .testimonial{
     background-color: #ededed;
     padding-top: 165px;
+     @media screen and (max-width: 768px){
+         padding-top: 30px;
+    }
 }
 
 .testimonial__heading,
@@ -55,6 +58,9 @@ color: #cd0a2d;
    @media screen and (max-width: 980px){
                  justify-content: center;
 
+               }
+               @media screen and (max-width: 768px){
+                padding-top: 40px;
                }
                @media screen and (max-width: 580px){
                  justify-content: center;
